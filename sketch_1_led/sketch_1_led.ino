@@ -1,18 +1,11 @@
-const int LED = 13;
-
-void setup() {
-  pinMode(LED, OUTPUT);
-
+void setup()
+    pinMode(8, OUTPUT);     // declara pino 8 como uma saída
 }
 
 void loop() {
-  digitalWrite(LED, HIGH);
-  delay(2000);
-  digitalWrite(LED, LOW);
-  delay(1000);
-  digitalWrite(LED, HIGH);
-  delay(500);
-  digitalWrite(LED, LOW);
-  delay(500);
-
+    digitalWrite(8, HIGH);
+    delay(500);
+    digitalWrite(8, LOW);
+    delay(500);
 }
+
