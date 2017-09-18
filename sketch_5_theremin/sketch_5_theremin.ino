@@ -1,6 +1,6 @@
-#define FTE 12
-#define LDR A0 
-#define POT A1 
+#define FTE 10
+#define LDR A2 
+#define POT A3 
 
 void setup() {}  // pinMode é opcional com analogRead
 
