@@ -1,3 +1,9 @@
+#ifndef SEVENSEGMENTDISPLAY_H
+#define SEVENSEGMENTDISPLAY_H
+
+const int DISPLAY_LEDS = 7;
+const int DISPLAY_DIGITS = 10;
+
 static int digit[10][7] = {
     {HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,LOW},
     {LOW, HIGH,HIGH,LOW, LOW, LOW, LOW},
@@ -11,11 +17,6 @@ static int digit[10][7] = {
     {HIGH,HIGH,HIGH,HIGH,LOW, HIGH,HIGH}
 };
 
-const int DISPLAY_LEDS = 7;
-const int DISPLAY_DIGITS = 10;
+void showNumber(int* disp, int dig);
 
-void showNumber(int* disp, int dig) {
-  for(int i = 0; i < DISPLAY_LEDS; i++) {
-     digitalWrite(disp[i], digit[dig][i]);
-  }
-}
+#endif
