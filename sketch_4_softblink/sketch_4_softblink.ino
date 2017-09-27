@@ -8,7 +8,7 @@ void setup() {
 
 void loop() {
     analogWrite(LED, brilho);
-    delay(2);
+    delay(50);
     brilho = brilho + direcao;
     if(brilho <= 0 || brilho >= 255) {
         direcao = -direcao;
