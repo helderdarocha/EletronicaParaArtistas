@@ -3,10 +3,6 @@ int G = 10;
 int B = 9;
 int POT = A0;
 
-/*
- * Pot, LDR, Termistor, LM35
- */
-
 void setup() {
   pinMode(R, OUTPUT);
   pinMode(G, OUTPUT);
@@ -37,3 +33,4 @@ void loop() {
     analogWrite(B, 255);
   }
 }
+

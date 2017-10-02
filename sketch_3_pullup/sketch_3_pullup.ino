@@ -1,22 +1,18 @@
-#define PINO_LIGAR    3
-#define PINO_DESLIGAR 4
-#define LED 8
-
 void setup() {
-  pinMode(LED, OUTPUT);
-  pinMode(PINO_LIGAR, INPUT_PULLUP);
-  pinMode(PINO_DESLIGAR, INPUT_PULLUP);
+  pinMode(8, OUTPUT);
+  pinMode(3, INPUT_PULLUP);
+  pinMode(4, INPUT_PULLUP);
 }
 
 void loop() {
-  int acender = digitalRead(PINO_LIGAR);  
-  int apagar  = digitalRead(PINO_DESLIGAR);  
+  int acender = digitalRead(3);  
+  int apagar  = digitalRead(4);  
    
   if(acender == LOW) {
-    digitalWrite(LED, HIGH);
+    digitalWrite(8, HIGH);
   }
   if(apagar  == LOW) {
-    digitalWrite(LED, LOW);
+    digitalWrite(8, LOW);
   }
 }
 

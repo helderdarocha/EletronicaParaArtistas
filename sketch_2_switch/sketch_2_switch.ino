@@ -1,17 +1,15 @@
-#define CHAVE 3
-#define LED   8
-
 void setup() {
-  pinMode(LED, OUTPUT);
+  pinMode(8, OUTPUT);
 }
 
 void loop() {
-  int estado = digitalRead(CHAVE);
-  delay(10); // espera 10 milissegundos antes de testar
+  int estado = digitalRead(3);
+  delay(10); // espera 10 ms antes de testar
   if(estado == LOW) {
-    digitalWrite(LED, HIGH);
+    digitalWrite(8, HIGH);
   } else {
-    digitalWrite(LED, LOW);
+    digitalWrite(8, LOW);
   }
 }
+
 
